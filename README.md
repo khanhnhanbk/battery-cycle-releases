@@ -47,6 +47,8 @@ If you previously installed a **debug-signed** build, uninstall it first. Androi
 
 The Honor X9d card shows level, charging status, temperature, the real **104** cycle count, estimated health (after enough charge data), and rated capacity. Launchers can throttle widget updates; open the app or tap Refresh for an immediate refresh.
 
+![BatteryCycle card on Honor X9d](screenshots/widget-honor.png)
+
 ## Verify the download
 
 Each release includes `SHA256SUMS.txt`. On Windows:
@@ -79,7 +81,7 @@ If a future release uses a different signing certificate, the release notes will
 - Design capacity is not public; manual entry may be required.
 - Health/capacity are estimates, not factory diagnostics.
 - WorkManager sampling is coarse (about every 15 minutes while charging) and OEMs can delay it.
-- Widget launcher placement/update behavior has not yet been physically verified on MagicOS.
+- Widget was added successfully on MagicOS and the 4×3 layout renders correctly; tap/resize/refresh behavior is still being checked.
 - GitHub and a future Google Play build may be different install channels.
 - Oppo Find X9 has not been probed yet.
 
