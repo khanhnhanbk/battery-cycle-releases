@@ -12,7 +12,7 @@ The app source is private. This repository exists to distribute signed binaries,
 - Keeps a local charge-session history.
 - Estimates full capacity and battery health after several charge samples.
 - Shows live level, status, temperature, voltage, current, and charge counter.
-- Includes a **4×3 home-screen card** with level, cycles, estimated health, temperature, and rated capacity. No notification or foreground service.
+- Includes a **2×2 home-screen card** with battery percent, temperature, and a ⚡ while charging, on a translucent glass background. No notification or foreground service.
 - Has no account, ads, analytics, cloud sync, or `INTERNET` permission.
 - Uses WorkManager while charging; **no persistent notification and no foreground service**.
 
@@ -42,12 +42,12 @@ If you previously installed a **debug-signed** build, uninstall it first. Androi
 1. Long-press an empty area of the home screen.
 2. Tap **Widgets** (MagicOS may call it **Cards**).
 3. Find **BatteryCycle**.
-4. Drag **BatteryCycle card** onto the home screen.
+4. Drag **BatteryCycle card** onto the home screen. It takes 2×2 cells.
 5. Tap the card to open the app.
 
-The Honor X9d card shows level, charging status, temperature, the real **104** cycle count, estimated health (after enough charge data), and rated capacity. Launchers can throttle widget updates; open the app or tap Refresh for an immediate refresh.
+The card shows the battery percent and temperature, with a small ⚡ while charging. Cycle count, health, and rated capacity are in the app. If you update from 0.1.2, remove the old 4×3 card and add it again to get the 2×2 size. Android widgets cannot blur the wallpaper, so the glass look is transparency, not Honor's system blur. Launchers can throttle widget updates; open the app or tap Refresh for an immediate refresh.
 
-![BatteryCycle card on Honor X9d](screenshots/widget-honor.png)
+![BatteryCycle 0.1.2 card on Honor X9d (0.1.3 is a smaller 2×2 card)](screenshots/widget-honor.png)
 
 ## Verify the download
 
