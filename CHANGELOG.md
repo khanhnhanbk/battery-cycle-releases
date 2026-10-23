@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.2 — 2026-10-23
+
+- Added the 4×3 home-screen card: level, status, temperature, hardware cycles, estimated health, rated capacity, last update.
+- Honor `MTN-NX1` device label renders as **Honor X9d**.
+- Widget refreshes on battery/power/boot broadcasts, app refresh, settings changes, and WorkManager samples.
+- Six widget formatting tests; 27 JVM tests total.
+- Version `0.1.2` (`versionCode 3`).
+
 ## 0.1.1 — 2026-10-23
 
 - Signed release APK and AAB.

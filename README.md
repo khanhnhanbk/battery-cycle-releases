@@ -12,6 +12,7 @@ The app source is private. This repository exists to distribute signed binaries,
 - Keeps a local charge-session history.
 - Estimates full capacity and battery health after several charge samples.
 - Shows live level, status, temperature, voltage, current, and charge counter.
+- Includes a **4×3 home-screen card** with level, cycles, estimated health, temperature, and rated capacity. No notification or foreground service.
 - Has no account, ads, analytics, cloud sync, or `INTERNET` permission.
 - Uses WorkManager while charging; **no persistent notification and no foreground service**.
 
@@ -35,6 +36,16 @@ The app source is private. This repository exists to distribute signed binaries,
 Download the newer APK and install it over the existing release. Android will keep local history for updates signed with the same key.
 
 If you previously installed a **debug-signed** build, uninstall it first. Android rejects a differently signed package; uninstalling removes local history.
+
+### Add the home-screen card
+
+1. Long-press an empty area of the home screen.
+2. Tap **Widgets** (MagicOS may call it **Cards**).
+3. Find **BatteryCycle**.
+4. Drag **BatteryCycle card** onto the home screen.
+5. Tap the card to open the app.
+
+The Honor X9d card shows level, charging status, temperature, the real **104** cycle count, estimated health (after enough charge data), and rated capacity. Launchers can throttle widget updates; open the app or tap Refresh for an immediate refresh.
 
 ## Verify the download
 
@@ -68,6 +79,7 @@ If a future release uses a different signing certificate, the release notes will
 - Design capacity is not public; manual entry may be required.
 - Health/capacity are estimates, not factory diagnostics.
 - WorkManager sampling is coarse (about every 15 minutes while charging) and OEMs can delay it.
+- Widget launcher placement/update behavior has not yet been physically verified on MagicOS.
 - GitHub and a future Google Play build may be different install channels.
 - Oppo Find X9 has not been probed yet.
 
