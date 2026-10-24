@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.4 — 2026-10-24
+
+- Home-screen card restyled to match the Honor system cards: same size and position as the Clock card, glass background with a light rim, white text.
+- Card shows only the temperature (e.g. 35°), a ⚡ Charging / Full chip, and a big percent in the system font.
+- Widget picker name is now **Battery**.
+- Asks the Honor launcher for card blur and stacking where supported.
+- 26 JVM tests.
+- Version `0.1.4` (`versionCode 5`).
+
 ## 0.1.3 — 2026-10-23
 
 - Home-screen card is now a fixed **2×2** card that fits beside MagicOS system cards and can be offered to card stacks.
